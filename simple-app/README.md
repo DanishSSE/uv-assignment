@@ -15,4 +15,4 @@ uv run main.py
 
 ## App Output
 
-![App Output](screenshot.png)
+![App Output](screenshot.jpg)

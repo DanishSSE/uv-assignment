@@ -7,11 +7,13 @@ authors = [
     { name = "danishballshore", email = "danish.b@allshorestaffing.com" }
 ]
 requires-python = ">=3.13"
-dependencies = []
+dependencies = [
+    "openai-agents>=0.2.11",
+]
 
 [project.scripts]
 packaged-app = "packaged_app:main"
-main = "packaged_app.main:greet"
+myagent = "packaged_app.main:run_agent"
 
 [build-system]
 requires = ["uv_build>=0.8.11,<0.9.0"]

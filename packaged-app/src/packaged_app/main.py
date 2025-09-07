@@ -1,4 +1,4 @@
-import os
+from os import getenv
 from dotenv import load_dotenv
 from agents import (
     Agent,
@@ -10,7 +10,7 @@ from agents import (
 )
 
 load_dotenv()
-GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
+GEMINI_API_KEY = getenv("GEMINI_API_KEY")
 if not GEMINI_API_KEY:
     raise ValueError("GEMINI_API_KEY is missing. Please set it in your .env file.")
 
